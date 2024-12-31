@@ -73,6 +73,7 @@ const EventManagement = () => {
         <h3 className="font-bold">Add New Event</h3>
         <input
           type="text"
+          required={true}
           placeholder="Event Name"
           className="border p-2 w-full my-2"
           value={newEvent.name}
@@ -80,6 +81,7 @@ const EventManagement = () => {
         />
         <textarea
           placeholder="Description"
+          required={true}
           className="border p-2 w-full my-2"
           value={newEvent.description}
           onChange={(e) => setNewEvent({ ...newEvent, description: e.target.value })}
@@ -87,6 +89,7 @@ const EventManagement = () => {
         <input
           type="text"
           placeholder="Location"
+          required={true}
           className="border p-2 w-full my-2"
           value={newEvent.location}
           onChange={(e) => setNewEvent({ ...newEvent, location: e.target.value })}
@@ -94,6 +97,7 @@ const EventManagement = () => {
         <input
           type="date"
           className="border p-2 w-full my-2"
+          required={true}
           value={newEvent.date}
           onChange={(e) => setNewEvent({ ...newEvent, date: e.target.value })}
         />

@@ -86,6 +86,7 @@ const TaskTracker = () => {
         <input
           type="text"
           placeholder="Task Name"
+          required={true}
           className="border p-2 w-full my-2"
           value={newTask.name}
           onChange={(e) => setNewTask({ ...newTask, name: e.target.value })}
