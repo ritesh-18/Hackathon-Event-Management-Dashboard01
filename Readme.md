@@ -44,14 +44,14 @@ This project is a Hackathon Management System built with a Node.js backend and a
 
 1. Start the backend server:
     ```sh
-    npm start
+    npm run start
     ```
 
 ### Frontend
 
 1. Start the frontend development server:
     ```sh
-    npm start
+    npm run dev
     ```
 
 ## Features
